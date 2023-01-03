@@ -1,0 +1,32 @@
+.variables {
+  --pf-color-bread-background: transparent;
+  --pf-color-bread-text: #eeeeee;
+  --pf-color-cta-background: #9e8d9e;
+  --pf-color-gradient-primary: #285867;
+  --pf-color-document-background: #333333;
+  --pf-color-document-text: #1e1e1e;
+  --pf-color-card-background: #aed3cf;
+
+  --pf-font-size-small: 0.875rem;
+  --pf-font-size-medium: 1rem;
+  --pf-font-size-large: 1.25rem;
+  --pf-font-size-x-large: 1.5rem;
+  --pf-font-size-xx-large: 1.75rem;
+  --pf-font-size-xxx-large: 2rem;
+
+  --pf-font-family: 'Montserrat', sans-serif;
+
+  --pf-margin-medium: 1rem;
+  --pf-margin-large: 2rem;
+
+  --pf-bread-height: 4rem;
+
+  --pf-section-height-small: 16rem;
+  --pf-section-height-medium: 24rem;
+  --pf-section-height-large: 36rem;
+
+  --pf-border-radius-medium: 0.5rem;
+  --pf-border-radius-large: 1rem;
+
+  --pf-transition-duration-fast: 200ms;
+}

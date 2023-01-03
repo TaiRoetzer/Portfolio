@@ -4,9 +4,11 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/home.css">
+    <script type="text/javascript" src="./scripts/scroll-handler.js"></script>
   </head>
 
-  <body>
+  <body class="variables">
+    <div class="decoration"></div>
     <header>
       <nav>
         <a>Home</a>
@@ -17,14 +19,59 @@
       </nav>
     </header>
     <div class="content">
-      <section data-type="cta"></section>
-      <section data-image-anchor="left"></section>
-      <section data-image-anchor="right"></section>
-      <section data-size="large"></section>
-      <section data-size="small"></section>
+      <section data-size="medium" data-type="cta">
+        <div class="description">
+          <h1>Katherine Roetzer</h1>
+          <h2>UI / UX Designer</h2>
+        </div>
+        <img class="image" src="./images/home/self.svg">
+      </section>
+      <section data-size="medium">
+        <img class="image" src="./images/home/ori-thumb.jpg">
+        <div class="description">
+          <div class="header">
+            <h2>Ori</h2>
+            <p>|</p>
+            <h3>Mobile Application</h3>
+          </div>
+          <div class="details">
+            <p>Details about Ori</p>
+          </div>
+        </div>
+      </section>
+      <section data-size="medium">
+        <div class="description">
+          <div class="header">
+            <h2>OCPL</h2>
+            <p>|</p>
+            <h3>Corperate Website Redesign</h3>
+          </div>
+          <div class="details">
+            <p>Details about OCPL</p>
+          </div>
+        </div>
+        <img class="image" src="./images/home/ocpl-thumb.png">
+      </section>
+      </section>
+      <section data-size="medium">
+        <img class="image" src="./images/home/website-thumb.jpg">
+        <div class="description">
+          <div class="header">
+            <h2>Portfolio</h2>
+            <p>|</p>
+            <h3>This Website</h3>
+          </div>
+          <div class="details">
+            <p>Details about Portfolio</p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       © 2022
     </footer>
+    <script>
+      const scrollHandler = new ScrollHandler({ decoration: 'decoration', header: 'header' });
+    </script>
   </body>
 </html>

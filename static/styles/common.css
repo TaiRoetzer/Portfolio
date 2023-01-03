@@ -1,27 +1,13 @@
+/* Global Externals */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
-:root {
-  --pf-color-bread-background: transparent;
-  --pf-color-bread-text: #eeeeee;
-  --pf-color-cta-background: #9e8d9e;
-  --pf-color-gradient-primary: #285867;
-  --pf-color-document-background: #333333;
-  --pf-color-document-text: #1e1e1e;
-  --pf-color-card-background: #aed3cf;
+/* Local Components */
+@import url('./variables.css');
+@import url('./section.css');
+@import url('./decoration.css');
 
-  --pf-font-size-small: 0.875rem;
-  --pf-font-size-medium: 1rem;
-  --pf-font-size-large: 1.25rem;
-
-  --pf-font-family: 'Montserrat', sans-serif;
-
-  --pf-margin-medium: 1rem;
-
-  --pf-bread-height: 4rem;
-
-  --pf-section-height-small: 16rem;
-  --pf-section-height-medium: 20rem;
-  --pf-section-height-large: 24rem;
+* {
+  z-index: 20;
 }
 
 html, body {
@@ -33,6 +19,23 @@ html, body {
   width: calc(100vw - (100vw - 100%));
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: var(--pf-margin-medium);
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--pf-font-size-xxx-large);
+}
+
+h2 {
+  font-size: var(--pf-font-size-xx-large);
+}
+
+h3 {
+  font-size: var(--pf-font-size-x-large);
+}
+
 header {
   align-items: center;
   background-color: var(--pf-color-bread-background);
@@ -40,7 +43,12 @@ header {
   display: flex;
   height: var(--pf-bread-height);
   justify-content: center;
+  transition-duration: var(--pf-transition-duration-fast);
   width: 100%;
+}
+
+header[data-hidden="true"] {
+  color: #00000000;
 }
 
 footer {
@@ -64,29 +72,6 @@ nav > * {
   flex-basis: 1;
   font-size: var(--pf-font-size-large);
   margin: var(--pf-font-size-medium);
-}
-
-section {
-  border-radius: 0.5rem;
-  background-color: var(--pf-color-card-background);
-  width: var(--pf-container-width);
-  height: 25rem;
-}
-
-section[data-size="small"] {
-  height: var(--pf-section-height-small);
-}
-
-section[data-size="medium"] {
-  height: var(--pf-section-height-medium);
-}
-
-section[data-size="large"] {
-  height: var(--pf-section-height-large);
-}
-
-section[data-type="cta"] {
-  background-color: var(--pf-color-cta-background);
 }
 
 .content {
