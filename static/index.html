@@ -5,17 +5,18 @@
     <link rel="stylesheet" href="styles/media.css">
     <link rel="stylesheet" href="styles/home.css">
     <script type="text/javascript" src="./scripts/scroll-handler.js"></script>
+    <script type="text/javascript" src="./scripts/navigation-handler.js"></script>
   </head>
 
   <body class="variables">
     <div class="decoration"></div>
     <header>
       <nav>
-        <a>Home</a>
-        <a>OCPL</a>
-        <a>Ori</a>
-        <a>Website</a>
-        <a>Other</a>
+        <a href="./index.html">Home</a>
+        <a href="./index.html">OCPL</a>
+        <a href="./index.html">Ori</a>
+        <a href="./index.html">Website</a>
+        <a href="./index.html">Other</a>
       </nav>
     </header>
     <div class="content">
@@ -26,7 +27,7 @@
         </div>
         <img class="image" src="./images/home/self.svg">
       </section>
-      <section data-size="medium">
+      <section data-size="medium" onclick="navigationHandler.navigateTo('./index.html')">
         <img class="image" src="./images/home/ori-thumb.jpg">
         <div class="description">
           <div class="header">
@@ -39,7 +40,7 @@
           </div>
         </div>
       </section>
-      <section data-size="medium">
+      <section data-size="medium" onclick="navigationHandler.navigateTo('./index.html')">
         <div class="description">
           <div class="header">
             <h2>OCPL</h2>
@@ -53,7 +54,7 @@
         <img class="image" src="./images/home/ocpl-thumb.png">
       </section>
       </section>
-      <section data-size="medium">
+      <section data-size="medium" onclick="navigationHandler.navigateTo('./index.html')">
         <img class="image" src="./images/home/website-thumb.jpg">
         <div class="description">
           <div class="header">
@@ -72,6 +73,7 @@
     </footer>
     <script>
       const scrollHandler = new ScrollHandler({ decoration: 'decoration', header: 'header' });
+      const navigationHandler = new NavigationHandler();
     </script>
   </body>
 </html>
